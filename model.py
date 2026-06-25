@@ -8,13 +8,10 @@ import numpy as np
 
 # Step 1 - prod
 def prod(shape):
-    prod = 1
-    if not shape:
-        return 1
-    else:
-        for i in shape:
-            prod *= i
-        return prod
+    result = 1
+    for dim in shape:
+        result *= dim
+    return result
 
 # Step 2 - argsort (not yet solved)
 # TODO: implement
